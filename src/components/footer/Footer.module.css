@@ -1,0 +1,44 @@
+footer {
+    margin-top: 120px;
+    background-color: var(--primary-color-red);
+
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+}
+
+.italic{
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 100px;
+   
+}
+
+.img{
+    width: 100%;
+}
+
+.text{
+    font-weight: 200;
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.massangerTg{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+

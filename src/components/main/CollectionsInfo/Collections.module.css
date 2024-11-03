@@ -1,0 +1,33 @@
+.collections {
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.collectionsList {
+  width: 100%; /* Let the grid handle width */
+  z-index: -1;
+  padding: 30px 0;
+  padding-left: 30px;
+  background-color: rgba(255, 178, 178, 1);
+  border-radius: 25px;
+  background-image: url("../../../assets/logo/star.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.num {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--primary-color-red);
+}
+
+.title {
+  font-weight: 400;
+  color: var(--primary-color);
+}
