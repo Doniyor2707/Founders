@@ -1,3 +1,4 @@
+// memo
 import { memo } from "react";
 
 // styles
