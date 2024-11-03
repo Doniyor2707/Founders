@@ -1,0 +1,52 @@
+.about {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+  margin-bottom: 40px;
+}
+
+.aboutContent {
+  display: flex;
+}
+
+.aboutImg {
+  width: 60%;
+}
+
+.aboutTitle {
+  width: 40%;
+  margin-top: 100px;
+}
+
+.room1 {
+  position: relative;
+  left: 15px;
+  z-index: 7;
+  bottom: 100px;
+}
+
+.room2 {
+  position: relative;
+  right: 66px;
+}
+
+.room3 {
+  bottom: 100px;
+  position: relative;
+  z-index: 9;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 65px;
+  text-transform: uppercase;
+  color: var(--primary-color-red);
+  margin-bottom: 40px;
+}
+
+.paragrf{
+    font-weight: 300;
+    font-size: 25px;
+    color: var(--primary-color);
+    line-height: 30px;
+}
