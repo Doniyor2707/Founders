@@ -38,12 +38,26 @@ a {
   height: 100vh;
 }
 
+.splide__pagination {
+  bottom: -30px !important;
+}
+
+.splide__pagination__page.is-active {
+  background-color: rgba(255, 178, 178, 1) !important;
+}
+
 .splide__arrow:disabled {
   width: 40px !important;
   height: 40px !important;
 
   opacity: 1 !important;
   background-color: var(--primary-color-red);
+}
+
+.splide__arrow {
+  background-color: var(--primary-color-red) !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .splide__arrow svg {
@@ -55,4 +69,3 @@ a {
   align-items: center !important;
   justify-content: space-between !important;
 }
-

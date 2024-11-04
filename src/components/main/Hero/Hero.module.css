@@ -27,12 +27,12 @@
 
 .heroImg {
     max-width: 700px;
-    position: relative; /* Allows positioning of child elements */
+    position: relative; 
 }
 
 .imgContent {
     border: 1px solid rgba(236, 0, 0, 1);
-    transform: rotate(-7deg); /* Rotates the div at a specific angle */
+    transform: rotate(-7deg); 
     position: relative;
     border-radius: 60px;
 }

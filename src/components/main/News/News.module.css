@@ -1,11 +1,35 @@
-.news{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 100px;
-    margin-top: 140px;
+.news {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 140px;
 }
 
-.content{
-    display: flex;
-    justify-content: space-between;
+.scrollWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollContainer {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
+}
+
+.scrollImage {
+  max-width: 300px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }

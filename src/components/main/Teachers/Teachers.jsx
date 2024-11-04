@@ -32,6 +32,30 @@ const teachersData = [
     IELTS: "7.5",
     position: "ESL Teacher",
   },
+
+  {
+    img: Teachers1,
+    teacher: "Iskhakova Leyla",
+    Experience: "4 years+",
+    IELTS: "7.0",
+    position: "ESL Teacher IELTS Instructor",
+  },
+
+  {
+    img: Teachers2,
+    teacher: "Kambarova Omina",
+    Experience: "2 years+",
+    IELTS: "6.0",
+    position: "ESL Teacher",
+  },
+
+  {
+    img: Teachers3,
+    teacher: "Yusupov Bunyodbek",
+    Experience: "1 years+",
+    IELTS: "7.5",
+    position: "ESL Teacher",
+  },
 ];
 
 function Teachers() {
