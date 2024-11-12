@@ -6,19 +6,11 @@
   text-decoration: none;
 }
 
+/*root color */
 :root {
-  /*root color */
   --primary-color: rgba(34, 34, 34, 1);
   --primary-color-red: rgba(236, 0, 0, 1);
   --primary-color-white: rgba(255, 255, 255, 1);
-}
-
-/* font */
-@font-face {
-  font-family: "Aquire", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("/assets/fonts/Aquire/Aquire.woff2") format("woff2");
 }
 
 :root {
@@ -26,7 +18,6 @@
 }
 
 body {
-  font-family: var(--font-family);
   color: var(--primary-color);
 }
 
@@ -35,24 +26,29 @@ a {
 }
 
 .container {
-  height: 100vh;
+  max-width: 1440px;
+  padding: 70px 100px;
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
 .splide__pagination {
   bottom: -30px !important;
 }
 
+
 .splide__pagination__page.is-active {
   background-color: rgba(255, 178, 178, 1) !important;
 }
 
+
 .splide__arrow:disabled {
   width: 40px !important;
   height: 40px !important;
-
   opacity: 1 !important;
   background-color: var(--primary-color-red);
 }
+
 
 .splide__arrow {
   background-color: var(--primary-color-red) !important;
@@ -60,10 +56,13 @@ a {
   height: 40px !important;
 }
 
+
 .splide__arrow svg {
   color: #fff !important;
   fill: #fff !important;
 }
+
+
 .splide__list {
   display: flex;
   align-items: center !important;

@@ -1,9 +1,9 @@
 import { memo } from "react";
 import Star from "../../../assets/images/star.png";
 
+import CollectionsList from "./CollectionsList";
 // styles
 import styles from "./Collections.module.css";
-import CollectionsList from "./CollectionsList";
 
 const collectionsData = [
   {

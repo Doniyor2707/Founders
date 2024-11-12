@@ -15,21 +15,22 @@ import Button from "../../components/ui/button/Button";
 
 function Home() {
   return (
-    <div>
-      <Hero />
+    <>
+      <div className="container">
+        <Hero />
 
-      <Collections />
+        <Collections />
 
-      <About />
+        <About />
 
-      <Teachers />
+        <Teachers />
 
-      <Course />
+        <Course />
 
-      <Books />
-
+        <Books />
+      </div>
       <News />
-    </div>
+    </>
   );
 }
 

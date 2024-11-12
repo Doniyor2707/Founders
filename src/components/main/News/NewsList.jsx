@@ -11,12 +11,12 @@ import styles from "./News.module.css";
 
 function NewsList() {
   return (
-    <div class={styles.scrollWrapper}>
-      <div class={styles.scrollContainer}>
-        <img src={Natija} alt="Image 1" class={styles.scrollImage} />
-        <img src={Events} alt="Image 2" class={styles.scrollImage} />
-        <img src={Overal} alt="Image 3" class={styles.scrollImage} />
-        <img src={Milliy} alt="Image 4" class={styles.scrollImage} />
+    <div className={styles.scrollWrapper}>
+      <div className={styles.scrollContainer}>
+        <img src={Natija} alt="Image 1" className={styles.scrollImage} />
+        <img src={Events} alt="Image 2" className={styles.scrollImage} />
+        <img src={Overal} alt="Image 3" className={styles.scrollImage} />
+        <img src={Milliy} alt="Image 4" className={styles.scrollImage} />
       </div>
     </div>
   );
