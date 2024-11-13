@@ -5,7 +5,7 @@ import { memo } from "react";
 import styles from "./Button.module.css";
 
 function Button({ title,style }) {
-  return <button className={styles.btn} style={{padding:`${style}`}}>{title}</button>;
+  return <button className={styles.btn} >{title}</button>;
 }
 
 export default memo(Button);

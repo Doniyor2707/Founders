@@ -4,8 +4,8 @@ header {
 
 .header {
   max-width: 1440px;
-  margin: 0 auto;
   padding: 10px 100px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,4 +39,28 @@ header {
   font-size: 18px;
   text-transform: uppercase;
   color: var(--primary-color);
+}
+
+
+@media (max-width: 480px) {
+
+  .header {
+    padding: 10px 24px;
+  }
+
+  .headerImg {
+    max-width: 124px;
+  }
+
+  .listGroup {
+    display: none;
+  }
+
+  .btns {
+    gap: 15px;
+  }
+
+  .btnLang img {
+    max-width: 20px;
+  }
 }
