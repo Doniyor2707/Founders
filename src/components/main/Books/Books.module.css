@@ -3,7 +3,6 @@
 }
 
 .freeBook {
-
   height: 300px;
   background-color: rgba(255, 178, 178, 1);
   border-radius: 30px;
@@ -17,4 +16,21 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .book {
+    margin-bottom: 10px;
+  }
+
+  .freeBook {
+    height: 200px;
+    border-radius: 14px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
 }
