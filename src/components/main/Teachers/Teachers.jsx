@@ -1,11 +1,11 @@
-// styles
-import styles from "./Teachers.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import Teachers1 from "../../../assets/images/teachers.png";
 import Teachers2 from "../../../assets/images/teachers2.png";
 import Teachers3 from "../../../assets/images/teachers3.png";
 import TeachersCard from "./TeachersCard";
+// styles
+import styles from "./Teachers.module.css";
 import Title from "../../ui/mainTitle/Title";
 
 const teachersData = [

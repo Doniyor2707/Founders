@@ -8,6 +8,7 @@ function TeachersCard({ item }) {
       <div className={styles.imgContent}>
         <img src={item.img} alt="Image 1" className={styles.img} />
       </div>
+      <h1 className={styles.titleTeacher}>{item.teacher}</h1>
       <div className={styles.info}>
         <p>
           Experience: <b>{item.Experience}</b>{" "}

@@ -1,27 +1,24 @@
-.teacher{
+.teacher {
   margin-bottom: 40px;
   padding: 10px;
 }
 
 /* Title styling */
 .titleTeacher {
-  margin-bottom: 40px;
-  text-transform: uppercase;
   text-align: center;
-  font-size: 60px;
-  font-weight: 900;
-  color: var(--primary-color-red);
+  font-size: 30px;
+  font-weight: 700;
 }
 
 /* Card styling */
 .card {
   display: flex;
   gap: 10px;
-  padding-left:40px;
+  padding-left: 40px;
   flex-direction: column;
   margin: 0 auto;
   max-width: 352px;
-  height: 350px;
+  height: 380px;
   transform: translateY(-5px);
 
   background-color: #ffffff;
@@ -39,8 +36,7 @@
       rgba(255, 0, 0, 0.3); /* Deeper inner shadow on hover */
 }
 
-
-.position{
+.position {
   max-width: 200px;
 }
 
@@ -70,24 +66,47 @@
   margin: 8px 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .title {
-    font-size: 40px;
-  }
-  .card {
-    width: 280px;
-    padding: 15px;
-  }
-}
-
 @media (max-width: 480px) {
-  .title {
-    font-size: 30px;
+  .teacher {
+    margin-bottom: 20px;
   }
+
+  /* Card styling */
   .card {
-    width: 240px;
-    padding: 10px;
+    display: flex;
+    gap: 1px;
+    padding: 0;
+    max-width: 100px;
+    height: 140px;
+  }
+
+  .titleTeacher {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .position {
+    max-width: 200px;
+  }
+
+  .imgContent {
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+  }
+
+  /* Image styling within card */
+  .img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 3px;
+  }
+
+  /* Paragraph styling within card */
+  .card p {
+    font-size: 6px;
+    color: #2c3e50;
+    margin:3px;
   }
 }
-
