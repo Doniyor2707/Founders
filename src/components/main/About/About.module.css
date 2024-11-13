@@ -54,7 +54,6 @@
 @media (max-width: 480px) {
   .aboutContent {
     position: relative;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
@@ -87,6 +86,8 @@
     position: relative;
     z-index: 9;
     max-width: 200px;
+    top: 100px;
+    right: 30%;
     bottom: 0;
   }
 

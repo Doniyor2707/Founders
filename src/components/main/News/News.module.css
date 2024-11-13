@@ -21,13 +21,17 @@
   height: auto;
   flex-shrink: 0;
   border-radius: 10px;
+  object-fit: cover;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(-100%);
+
+@media (max-width: 480px) {
+  .news {
+    margin-top: 40px;
   }
-  100% {
-    transform: translateX(100%);
+
+  .scrollImage{
+    max-width: 150px; 
   }
+  
 }
