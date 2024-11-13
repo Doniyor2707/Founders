@@ -1,5 +1,5 @@
 import { memo } from "react";
-import Star from "../../../assets/images/star.png";
+
 
 import CollectionsList from "./CollectionsList";
 // styles
