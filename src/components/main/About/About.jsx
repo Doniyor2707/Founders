@@ -12,9 +12,9 @@ function About() {
     <div className={styles.about}>
       <div className={styles.aboutContent}>
         <div className={styles.aboutImg}>
-          <img className={styles.room1} src={Room1} alt="room" width={300}/>
-          <img className={styles.room2} src={Room2} alt="room" width={400}/>
-          <img className={styles.room3} src={Room3} alt="room" width={400}/>
+          <img className={styles.room1} src={Room1} alt="room" />
+          <img className={styles.room2} src={Room2} alt="room" />
+          <img className={styles.room3} src={Room3} alt="room" />
         </div>
         {/* title */}
         <AboutTitle />

@@ -20,17 +20,20 @@
   left: 15px;
   z-index: 7;
   bottom: 100px;
+  max-width: 300px;
 }
 
 .room2 {
   position: relative;
   right: 66px;
+  max-width: 400px;
 }
 
 .room3 {
   bottom: 100px;
   position: relative;
   z-index: 9;
+  max-width: 400px;
 }
 
 .text {
@@ -46,4 +49,50 @@
   font-size: 25px;
   color: var(--primary-color);
   line-height: 30px;
+}
+
+@media (max-width: 480px) {
+  .aboutContent {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .aboutTitle {
+    width: 100%;
+  }
+
+  .room1 {
+    top: 10px;
+    position: absolute;
+    z-index: 7;
+    max-width: 120px;
+  }
+
+  .room2 {
+    position: relative;
+    left: 40%;
+    max-width: 227px;
+  }
+
+  .room3 {
+    position: relative;
+    z-index: 9;
+    max-width: 200px;
+    bottom: 0;
+  }
+
+  .paragrf {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
 }

@@ -7,3 +7,10 @@
   font-weight: 700;
   color: var(--primary-color-red);
 }
+
+@media (max-width: 480px) {
+  .title{
+    font-size: 37px;
+    line-height: 37px;
+  }
+}
