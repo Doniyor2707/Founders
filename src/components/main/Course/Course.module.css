@@ -71,3 +71,9 @@
 .card-content b {
   color: #e60000; /* Primary color for bold text */
 }
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 321px;
+  }
+}
