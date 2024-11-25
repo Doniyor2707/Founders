@@ -1,6 +1,6 @@
 import Title from "../../ui/mainTitle/Title";
-import styles from "./Course.module.css";
 import CourseCard from "./CourseCard";
+import styles from "./Course.module.css";
 
 function Course() {
   return (

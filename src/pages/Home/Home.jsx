@@ -8,8 +8,6 @@ import {
   News,
   Teachers,
 } from "../../components/main";
-// ui
-import Button from "../../components/ui/button/Button";
 
 // image
 

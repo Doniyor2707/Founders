@@ -10,7 +10,7 @@
   color: var(--primary-color-red);
   font-weight: 700;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 74px;
   margin-bottom: 30px;
 }
 
@@ -29,14 +29,14 @@
 
 .imgContent {
   border: 1px solid rgba(236, 0, 0, 1);
-  transform: rotate(-7deg);
+  transform: rotate(-6deg);
   position: relative;
   border-radius: 60px;
 }
 
 .imgRating {
   border-radius: 70px;
-  transform: rotate(7deg); /* Reverse rotation to keep img upright */
+  transform: rotate(6deg); /* Reverse rotation to keep img upright */
   box-shadow: 25px 25px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -44,11 +44,11 @@
 
 @media (max-width: 768px) {
   .home {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     gap: 40px;
     margin-bottom: 50px;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
   }
 
   .text {
@@ -80,6 +80,7 @@
 }
 
 @media (max-width: 480px) {
+
   .text {
     font-size: 32px;
     line-height: 40px;
@@ -97,4 +98,6 @@
   .imgRating {
     border-radius: 30px;
   }
+
+  
 }

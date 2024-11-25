@@ -1,44 +1,94 @@
 footer {
-    margin-top: 120px;
-    background-color: var(--primary-color-red);
-
+  margin-top: 120px;
+  background-color: var(--primary-color-red);
 }
 
-.aboutMe{
-    display: flex;
-    justify-content: space-between;
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
 }
 
-.italic{
-    margin-bottom: 40px;
-    text-align: center;
-    font-weight: 100;
-    font-style: italic;
-    font-size: 80px;
+.italic {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 80px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 100px;
+}
+
+.img {
+  width: 100%;
+}
+
+.text {
+  font-weight: 200;
+  color: rgba(255, 255, 255, 1);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.massangerTg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  footer {
+    margin-top: 40px;
+  }
+
+  .italic {
+    margin-bottom: 15px;
+    font-size: 32px;
     color: rgba(255, 255, 255, 1);
-}
+  }
 
-.footer{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 40px 100px;
-   
-}
-
-.img{
+  .footer {
     width: 100%;
-}
+    padding: 20px;
+  }
 
-.text{
+  .text {
     font-weight: 200;
     color: rgba(255, 255, 255, 1);
-    font-size: 30px;
-    margin-bottom: 20px;
-}
+    font-size: 17px;
+  }
 
-.massangerTg{
+  .aboutMe {
+    display: flex;
+    flex-direction: column; /* Barcha elementlarni ustma-ust joylashtirish */
+    text-align: center;
+    align-items: center;
+    gap: 20px; /* Elementlar orasidagi bo‘shliq */
+  }
+
+  .aboutMe img {
+    order: 1; /* Logo birinchi o‘rinda bo‘ladi */
+  }
+
+  .aboutMe div:nth-child(2) {
+    order: 2; /* "Biz bilan bog‘lanish" ikkinchi o‘rinda bo‘ladi */
+  }
+
+  .massanger {
+    order: 3; /* "Ijtimoiy tarmoqlarimiz" oxirgi o‘rinda bo‘ladi */
+  }
+
+  .massangerTg {
     display: flex;
     align-items: center;
-    gap: 20px;
-}
+    gap: 5px;
+  }
 
+  .massangerTg img {
+    max-width: 20px;
+  }
+}

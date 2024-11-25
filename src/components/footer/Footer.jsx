@@ -22,9 +22,9 @@ function Footer() {
           <div className={styles.massanger}>
             <h4 className={styles.text}>Ijtimoiy tarmoqlarimiz:</h4>
             <div className={styles.massangerTg}>
-              <img src={Tg} alt="" width={40} />
-              <img src={Tg} alt="" width={40} />
-              <img src={Tg} alt="" width={40} />
+              <img src={Tg} alt="" />
+              <img src={Tg} alt="" />
+              <img src={Tg} alt="" />
             </div>
           </div>
         </div>
