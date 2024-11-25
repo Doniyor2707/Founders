@@ -64,31 +64,32 @@ footer {
 
   .aboutMe {
     display: flex;
-    flex-direction: column; /* Barcha elementlarni ustma-ust joylashtirish */
+    flex-direction: column; 
     text-align: center;
     align-items: center;
-    gap: 20px; /* Elementlar orasidagi bo‘shliq */
+    gap: 20px; 
   }
 
   .aboutMe img {
-    order: 1; /* Logo birinchi o‘rinda bo‘ladi */
+    order: 1; 
   }
 
   .aboutMe div:nth-child(2) {
-    order: 2; /* "Biz bilan bog‘lanish" ikkinchi o‘rinda bo‘ladi */
+    order: 2; 
   }
 
   .massanger {
-    order: 3; /* "Ijtimoiy tarmoqlarimiz" oxirgi o‘rinda bo‘ladi */
+    order: 3; 
   }
 
   .massangerTg {
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    gap: 15px;
   }
 
   .massangerTg img {
-    max-width: 20px;
+    max-width: 40px;
   }
 }
