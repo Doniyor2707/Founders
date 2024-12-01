@@ -7,6 +7,7 @@ import Button from "../ui/button/Button";
 // styles
 import styles from "./Header.module.css";
 import HeaderList from "./HeaderList";
+import { Link } from "react-router-dom";
 
 const headerList = [
   { label: "Biz haqimizda" },
@@ -35,7 +36,9 @@ function Header() {
             <img src={Lang} alt="language" />
           </button>
 
-          <Button style={"10px 35px"} title={"Kirish"} />
+          <Link to={"/register"}>
+            <Button style={"10px 35px"} title={"Kirish"} />
+          </Link>
         </div>
       </div>
     </header>

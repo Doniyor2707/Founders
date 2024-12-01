@@ -6,7 +6,6 @@ import styles from "./Button.module.css";
 
 function Button({
   title,
-
   variant = "primary",
   onClick,
   type = "button",
