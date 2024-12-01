@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { MainLayout } from "./layout";
-import { Home } from "./pages";
+import { AuthLayout, MainLayout } from "./layout";
+import { Home, Register } from "./pages";
 
 function Router() {
   return (
@@ -10,8 +10,12 @@ function Router() {
         <Route path="/" element={<Home />} />
       </Route>
 
-      {/* not found */}
+      {/* auth layout */}
+      <Route element={<AuthLayout />}>
+        <Route path="/register" element={<Register />} />
+      </Route>
 
+      {/* not found */}
       <Route path="*" element={<h1>Page not found</h1>} />
     </Routes>
   );

@@ -12,7 +12,7 @@ function Footer() {
 
         <img src={Karta} alt="Karta" className={styles.img} />
         <div className={styles.aboutMe}>
-          <img src={Logo} alt="" width={200} />
+          <img src={Logo} alt="Logo" width={200} />
 
           <div>
             <h4 className={styles.text}>Biz bilan bog‘lanish:</h4>

@@ -1,0 +1,59 @@
+.globalForm {
+  padding: 10px;
+}
+
+.form {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #ec0000;
+  box-shadow: 15px 15px 40px 0px rgba(255, 0, 0, 0.3);
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.levelLabel {
+  color: #374151;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.levelContainer {
+  margin-bottom: 1.5rem;
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .globalForm {
+    padding: 20px;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 32rem;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.475rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+
+}

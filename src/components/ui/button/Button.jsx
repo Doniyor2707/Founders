@@ -4,8 +4,22 @@ import { memo } from "react";
 // styles
 import styles from "./Button.module.css";
 
-function Button({ title,style }) {
-  return <button className={styles.btn} >{title}</button>;
+function Button({
+  title,
+
+  variant = "primary",
+  onClick,
+  type = "button",
+}) {
+  return (
+    <button
+      className={`${styles.button} ${styles[variant]}`}
+      type={type}
+      onClick={onClick}
+    >
+      {title}
+    </button>
+  );
 }
 
 export default memo(Button);
