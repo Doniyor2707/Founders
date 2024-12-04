@@ -80,13 +80,13 @@
     align-items: start;
     gap: 1px;
     padding: 5px;
-    max-width: 220px;
-    height: 300px;
+    max-width: 240px;
+    height: 310px;
   }
 
   .titleTeacher {
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 12px;
   }
 

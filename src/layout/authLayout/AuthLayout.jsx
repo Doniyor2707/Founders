@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-;
 import Header from "../../components/header/Header";
 
 function AuthLayout() {
@@ -7,8 +6,14 @@ function AuthLayout() {
     <>
       <Header />
 
-      <main>
-        <Outlet />  
+      <main
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Outlet />
       </main>
     </>
   );

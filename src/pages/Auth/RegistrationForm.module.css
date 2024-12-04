@@ -4,7 +4,7 @@
 
 .form {
   width: 100%;
-  max-width: 42rem;
+  max-width: 52rem;
   margin: 0 auto;
   margin-top: 60px;
   padding: 2rem;
@@ -39,12 +39,22 @@
 
 @media (max-width: 480px) {
   .globalForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    min-height: 100vh;
   }
 
   .form {
     width: 100%;
     max-width: 32rem;
+    margin: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(236, 0, 0, 1);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 6px 6px 16px 0px rgba(255, 0, 0, 0.3);
+
     padding: 1rem;
   }
 
@@ -52,8 +62,6 @@
     font-size: 1.475rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
-
-
 }
