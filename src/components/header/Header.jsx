@@ -68,7 +68,7 @@ function Header() {
               Kirish uchun profillardan birini tanlang
             </p>
 
-            <div style={{ display: "flex", gap: "35px" }}>
+            <div className={styles.modalCard}>
               <div className={styles.modalContentCart} onClick={handleTeacher}>
                 <img src={Teacher} alt="Teacher" className={styles.modalImg} />
                 <h1>O‘qituvchi</h1>

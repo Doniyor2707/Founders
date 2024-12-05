@@ -49,6 +49,10 @@
     position: relative;
   }
 
+  .modalContent {
+    gap: 5px;
+  }
+
   .closeBtn {
     display: none;
   }
