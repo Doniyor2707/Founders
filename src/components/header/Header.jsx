@@ -7,7 +7,14 @@ import Button from "../ui/button/Button";
 // styles
 import styles from "./Header.module.css";
 import HeaderList from "./HeaderList";
-import { Link } from "react-router-dom";
+
+import { useState } from "react";
+import Modal from "../ui/modal/Modal";
+
+// img
+import Teacher from "../../assets/images/teacherRegister.png";
+import Student from "../../assets/images/studenRegister.png";
+import { useNavigate } from "react-router-dom";
 
 const headerList = [
   { label: "Biz haqimizda" },
@@ -17,6 +24,23 @@ const headerList = [
 ];
 
 function Header() {
+  // state
+  const [modal, setModal] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleModal = () => {
+    setModal(true);
+  };
+
+  const closeModal = () => {
+    setModal(false);
+  };
+
+  const handleTeacher = () => {
+    navigate("/");
+  };
+
   return (
     <header>
       <div className={styles.header}>
@@ -36,11 +60,29 @@ function Header() {
             <img src={Lang} alt="language" />
           </button>
 
-          <Link to={"/register"}>
-            <Button style={"10px 35px"} title={"Kirish"} />
-          </Link>
+          <Button style={"10px 35px"} title={"Kirish"} onClick={handleModal} />
+
+          <Modal show={modal} onClose={closeModal}>
+            <h1 className={styles.modalTitle}>Kirish!</h1>
+            <p className={styles.modalP}>
+              Kirish uchun profillardan birini tanlang
+            </p>
+
+            <div style={{ display: "flex", gap: "35px" }}>
+              <div className={styles.modalContentCart} onClick={handleTeacher}>
+                <img src={Teacher} alt="Teacher" className={styles.modalImg} />
+                <h1>O‘qituvchi</h1>
+              </div>
+              <div className={styles.modalContentCart}>
+                <img src={Student} alt="Student" className={styles.modalImg} />
+                <h1>O‘quvchi</h1>
+              </div>
+            </div>
+          </Modal>
         </div>
       </div>
+
+      {/* Modal */}
     </header>
   );
 }
