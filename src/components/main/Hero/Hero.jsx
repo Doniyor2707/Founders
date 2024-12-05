@@ -5,8 +5,17 @@ import Button from "../../ui/button/Button";
 import Image from "../../../assets/images/main_img.jpg";
 // styles
 import styles from "./Hero.module.css";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+    navigate("/register")
+  }
+
+
   return (
     <div className={styles.home}>
       {/* hero text content */}
@@ -19,7 +28,7 @@ function Hero() {
           hayotini o‘zgartirishga o‘z hissasini qo‘shgan!
         </p>
 
-        <Button style={"10px 20px"} title={"Birinchi darsga yozilish"} />
+        <Button style={"10px 20px"} title={"Birinchi darsga yozilish"} onClick={handleNavigate}/>
       </div>
 
       {/* hero image */}
