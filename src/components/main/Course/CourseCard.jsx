@@ -1,54 +1,75 @@
-
 import { memo } from "react";
 
 import True from "../../../assets/logo/true.png";
-import Kids from "../../../assets/images/kids.png";
 import styles from "./Course.module.css";
+import Button from "../../ui/button/Button";
+import { useNavigate } from "react-router-dom";
 
-function CourseCard() {
+function CourseCard({
+  title,
+  img,
+  courseTimeBold,
+  courseTime,
+  teacherBold,
+  teacher,
+  spanTitleBold,
+  spanTitle,
+  spanParagrfBold,
+  spanParagrf,
+  cabinetBold,
+  cabinet,
+}) {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/register");
+  };
   return (
     <div className={styles.card}>
       <div className={styles["card-header"]}>
-        <img src={Kids} alt="Course Icon" />
-        <h2>Kids English</h2>
+        <img src={img} alt="Course Icon" />
+        <h2>{title}</h2>
       </div>
       <div className={styles["card-content"]}>
         <img src={True} alt="icon" />
         <p>
-          <b>30 soatlik darslar</b> (asosiy darslar: haftasiga 2 soat / 3 marta
-          Academic support: haftasiga 2 marta / 30 min)
+          <b>{courseTimeBold}</b>
+          {courseTime}
         </p>
       </div>
       <div className={styles["card-content"]}>
         <img src={True} alt="icon" />
         <p>
-          <b>Ikkita o‘qituvchi</b> (asosiy darslar: haftasiga 2 soat / 3 marta
-          Academic support: haftasiga 2 marta / 30 min)
+          <b>{teacherBold}</b>
+          {teacher}
         </p>
       </div>
       <div className={styles["card-content"]}>
         <img src={True} alt="icon" />
         <p>
-          <b>Free Sunday Events</b> (asosiy darslar: haftasiga 2 soat / 3 marta
-          Academic support: haftasiga 2 marta / 30 min)
+          <b>{spanTitleBold}</b>
+          {spanTitle}
         </p>
       </div>
       <div className={styles["card-content"]}>
         <img src={True} alt="icon" />
         <p>
-          <b>Diery</b> (asosiy darslar: haftasiga 2 soat / 3 marta Academic
-          support: haftasiga 2 marta / 30 min)
+          <b> {spanParagrfBold}</b>
+          {spanParagrf}
         </p>
       </div>
       <div className={styles["card-content"]}>
         <img src={True} alt="icon" />
         <p>
-          <b>Shaxsiy kabinet</b> (asosiy darslar: haftasiga 2 soat / 3 marta
-          Academic support: haftasiga 2 marta / 30 min)
+          <b>{cabinetBold}</b>
+          {cabinet}
         </p>
+      </div>
+      <div style={{ marginTop: "17px", textAlign: "center" }}>
+        <Button onClick={handleNavigate} title={"Birinchi darsga yozilish"} />
       </div>
     </div>
   );
 }
 
-export default memo(CourseCard) ;
+export default memo(CourseCard);

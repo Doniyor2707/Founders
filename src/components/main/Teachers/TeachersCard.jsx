@@ -13,9 +13,13 @@ function TeachersCard({ item }) {
         <p>
           Experience: <b>{item.Experience}</b>{" "}
         </p>
-        <p>
-          IELTS: <b>{item.IELTS}</b>
-        </p>
+        {item.IELTS ? (
+          <p>
+            IELTS: <b>{item.IELTS}</b>
+          </p>
+        ) : (
+          ""
+        )}
         <p className={styles.position}>
           Position: <b>{item.position}</b>
         </p>
