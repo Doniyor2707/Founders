@@ -5,6 +5,7 @@
 
 /* Title styling */
 .titleTeacher {
+  margin-top: 10px;
   display: flex;
   align-items: start;
   font-size: 24px;
@@ -20,9 +21,8 @@
   align-items: start;
   margin: 0 auto;
   max-width: 352px;
-  height: 420px;
+  height: 400px;
   transform: translateY(-5px);
-
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.15),
@@ -43,7 +43,7 @@
 }
 
 .imgContent {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 40px;
   width: 200px;
   height: 200px;
@@ -71,23 +71,26 @@
 @media (max-width: 480px) {
   .teacher {
     margin-bottom: 60px;
+
   }
 
   /* Card styling */
   .card {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1px;
-    padding: 5px;
-    max-width: 240px;
-    height: 310px;
+    padding: 0px;
+    margin: 0 auto;
+    gap: 0;
+    max-width: 113px;
+    height: 146px;
+    padding-left: 0px;
+    box-shadow: 0px 5.04px 1.99px 0px rgba(255, 0, 0, 0.25) inset;
+    box-shadow: 0px -5.04px 1.99px 0px rgba(255, 0, 0, 0.25) inset;
   }
 
   .titleTeacher {
     margin: 0 auto;
-    font-size: 17px;
-    line-height: 12px;
+    font-size: 11px;
+    line-height: 12.5px;
+    max-width: 74px;
   }
 
   .position {
@@ -95,12 +98,13 @@
   }
 
   .imgContent {
-    width: 91px;
-    height: 91px;
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgba(34, 34, 34, 1);
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 10px;
     border-radius: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   /* Image styling within card */
@@ -118,9 +122,9 @@
 
   /* Paragraph styling within card */
   .card p {
-    padding: 3px 0;
-    font-size: 14px;
+    font-size: 7px;
     color: #2c3e50;
-    margin: 3px;
+    margin: 0;
+    padding: 0;
   }
 }

@@ -20,7 +20,6 @@ const teachersData = [
     img: Teachers1,
     teacher: "Iskhakova Leyla",
     Experience: "4 years+",
-    IELTS: "7.0",
     position: "ESL Teacher IELTS Instructor",
   },
 
@@ -28,7 +27,6 @@ const teachersData = [
     img: Teachers2,
     teacher: "Kambarova Omina",
     Experience: "2 years+",
-    IELTS: "6.0",
     position: "ESL Teacher",
   },
 
@@ -36,7 +34,6 @@ const teachersData = [
     img: Teachers3,
     teacher: "Yusupov Bunyodbek",
     Experience: "1 years+",
-    IELTS: "7.5",
     position: "ESL Teacher",
   },
 
@@ -46,7 +43,7 @@ const teachersData = [
     Experience: "7 years+",
     position: "ESL Teacher",
   },
-  
+
   {
     img: Teachers6,
     teacher: "Asadova Zarrina",
@@ -65,7 +62,6 @@ const teachersData = [
     img: Teachers9,
     teacher: "Abatbaeva Sarbina",
     Experience: "2.5 years+",
-    IELTS: "7.0",
     position: "ESL Teacher",
   },
 
@@ -73,7 +69,6 @@ const teachersData = [
     img: Teachers7,
     teacher: "Soatmurodova Dinora",
     Experience: "2 years+",
-    IELTS: "7.5",
     position: "ESL Teacher",
   },
 
@@ -81,7 +76,6 @@ const teachersData = [
     img: Teachers8,
     teacher: "Yusupova Sarvinoz",
     Experience: "1.5 years+",
-    IELTS: "7.5",
     position: "ESL Teacher",
   },
 ];
@@ -97,7 +91,7 @@ function Teachers() {
           perPage: 3,
           breakpoints: {
             768: { perPage: 2 },
-            480: { perPage: 1 },
+            480: { perPage: 2 },
           },
         }}
       >
